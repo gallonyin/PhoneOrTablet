@@ -5,4 +5,9 @@
 - 方法二、屏幕尺寸大于7寸判断
 - 方法三、Google推荐的方法判断
 
+
+已打包APP下载链接：https://cdn.asrtts.cn/uploads/apps/PhoneOrTablet/PhoneOrTablet-1.0.apk
+
+APP截图：
+
 <img src="https://github.com/gallonyin/PhoneOrTablet/blob/master/image/img1.png" width="390" height="870" alt="app截图"/><br/>
