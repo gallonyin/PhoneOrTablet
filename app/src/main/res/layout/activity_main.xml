@@ -10,9 +10,11 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -25,6 +27,12 @@
                 android:text="屏幕参数:"
                 />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"
+                />
+
             <TextView
                 android:id="@+id/tv_method1"
                 android:layout_width="wrap_content"
@@ -33,6 +41,12 @@
                 android:textSize="18sp"
                 android:textColor="#333"
                 android:text="ro.build.characteristics:"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"
                 />
 
             <TextView
@@ -45,6 +59,12 @@
                 android:text="屏幕尺寸大于7寸:"
                 />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5"
+                />
+
             <TextView
                 android:id="@+id/tv_method3"
                 android:layout_width="wrap_content"
@@ -53,6 +73,12 @@
                 android:textSize="18sp"
                 android:textColor="#333"
                 android:text="Google推荐的方法:"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e5e5"
                 />
 
             <TextView
