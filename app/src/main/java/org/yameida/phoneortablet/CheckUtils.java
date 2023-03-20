@@ -37,10 +37,11 @@ public class CheckUtils {
         double y = Math.pow(dm.heightPixels / dm.ydpi, 2);
         // 屏幕尺寸
         double screenInches = Math.sqrt(x + y);
-        // 大于6尺寸则为Pad
-        if (screenInches >= 6.0) {
+        // 大于7尺寸则为Pad
+        if (screenInches >= 7.0) {
             result = true;
         }
+        Log.d(TAG, "screenInches:" + screenInches);
         Log.d(TAG, "isPad:" + result);
         return result;
     }
@@ -50,6 +51,20 @@ public class CheckUtils {
      */
     public static boolean isTablet(Context context) {
         return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_LARGE;
+    }
+
+    /**
+     * 判断屏幕尺寸
+     */
+    public static double screenSize(Context context) {
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        Display display = wm.getDefaultDisplay();
+        DisplayMetrics dm = new DisplayMetrics();
+        display.getMetrics(dm);
+        double x = Math.pow(dm.widthPixels / dm.xdpi, 2);
+        double y = Math.pow(dm.heightPixels / dm.ydpi, 2);
+        // 屏幕尺寸
+        return Math.sqrt(x + y);
     }
 
 }
